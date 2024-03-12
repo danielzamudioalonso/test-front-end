@@ -1,5 +1,5 @@
 import { FormikProps } from 'formik'
-import { Dispatch, SetStateAction } from 'react'
+import { Dispatch, SetStateAction, useEffect } from 'react'
 import { Item } from '../../../order.interface'
 import { ButtonFill, ButtonLine } from '../../Buttons/button'
 import ModalComponent from '../ModalComponent'
@@ -11,14 +11,27 @@ type Props = {
 }
 const AddProductForm = ({ formik, setIsOpen }:Props) => {
 
+  const manualValidate = (fields: string[], formik: FormikProps<Item>) => {
+    fields.forEach(field => {
+      formik.setFieldTouched(field)
+    })
+  }
+
   const handleOnClickCancel = () => {
     setIsOpen(false)
     formik.resetForm()
   }
+
   const handleOnAdd = () => {
-    formik.submitForm()
-    setIsOpen(false)
+    if (formik.isValid) {
+      formik.submitForm()
+      setIsOpen(false)
+    }
   }
+
+  useEffect(() => {
+    manualValidate(['sku', 'name', 'quantity', 'price'], formik)
+  }, [])
 
   return (
     <ModalComponent title='Add New Product' ContentModalStyle={{ width: '50%' }}>

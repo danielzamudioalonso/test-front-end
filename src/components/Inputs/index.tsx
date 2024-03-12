@@ -12,6 +12,7 @@ type Props = {
 const InputComponent = ({ type, name, placeholder, formik }:Props) => {
   return(
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+      <label style={{ fontSize: '15px', display: 'flex' }}>{name}:</label>
       <Input
         type={type}
         name={name}
@@ -19,14 +20,14 @@ const InputComponent = ({ type, name, placeholder, formik }:Props) => {
         value={String(getIn(formik.values, name))}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
-        style={(type === 'number' ? !getIn(formik.errors, name) : getIn(formik.errors, name)) ? {
+        style={getIn(formik.errors, name) ? {
           border: '2px solid red'
         } : {}}
       />
       {
         (type === 'number' ? !getIn(formik.errors, name) : getIn(formik.errors, name)) && getIn(formik.touched, name) &&
           <span style={{ color: 'red', fontSize: '10px', textAlign:'start' }}>
-            {getIn(formik.errors, name)}*
+            {getIn(formik.errors, name)}
           </span>
       }
     </div>
