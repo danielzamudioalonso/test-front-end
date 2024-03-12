@@ -1,0 +1,194 @@
+{
+    "id": "4740781015180",
+    "number": "1429",
+    "marketPlaceId": null,
+    "groupId": null,
+    "name": "#1429",
+    "packsId": null,
+    "email": null,
+    "fulfillmentStatus": {
+      "id": null,
+      "status": null,
+      "ecartapi": "unfulfilled",
+      "ecartapiId": "3",
+      "partiallAvailable": "true"
+    },
+    "currency": "MXN",
+    "currencyExtension": null,
+    "discountsCoupon": {
+      "type": null,
+      "codeCupon": null,
+      "discount": null,
+      "discountAmount": null
+    },
+    "totals": {
+      "subtotal": "240.00",
+      "total": "240.00",
+      "tax": "100.00",
+      "discount": "10.00",
+      "weight": "0.30",
+      "shipping": "0.00"
+    },
+    "dimensions": {
+      "width": null,
+      "height": null,
+      "length": null
+    },
+    "totalsExtension": {
+      "subtotal": null,
+      "total": null,
+      "tax": null,
+      "discount": null,
+      "shipping": null
+    },
+    "taxesIncluded": "false",
+    "taxLines": [],
+    "units": {
+      "weight": "kg"
+    },
+    "status": {
+      "id": null,
+      "status": "any",
+      "financial": "paid",
+      "ecartapi": "paid",
+      "ecartapiId": "1"
+    },
+    "locationId": null,
+    "reference": null,
+    "tags": [
+      "imported"
+    ],
+    "payment": {
+      "method": "",
+      "status": "paid",
+      "ecartapi": null
+    },
+    "customer": {},
+    "refunds": [],
+    "billingAddress": {
+      "id": null,
+      "firstName": "Alex",
+      "lastName": "de la Cruz",
+      "dni": null,
+      "identificationNumber": null,
+      "address1": "123 Fake Street",
+      "address2": null,
+      "interiorNumber": null,
+      "address3": null,
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "codeIso2": null,
+        "codeIso3": null
+      },
+      "state": {
+        "code": "ON",
+        "name": "Ontario",
+        "codeIso2": null,
+        "codeIso3": null
+      },
+      "city": "Fakecity",
+      "postalCode": "K2P 1L4",
+      "phone": "555-555-5555",
+      "email": null,
+      "company": "envia.com",
+      "references": null,
+      "latitude": null,
+      "longitude": null
+    },
+    "logistic": {
+      "mode": null,
+      "type": null,
+      "free": "false",
+      "direction": null,
+      "serviceId": null
+    },
+    "shippingMethod": null,
+    "shippingOptionReference": null,
+    "shippingLabel": null,
+    "documents": {
+      "shippingLabels": []
+    },
+    "shippingAddress": {
+      "id": null,
+      "firstName": "John",
+      "lastName": "Silver",
+      "dni": null,
+      "identificationNumber": null,
+      "address1": "123 Fake Street",
+      "address2": null,
+      "interiorNumber": null,
+      "address3": null,
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "codeIso2": null,
+        "codeIso3": null
+      },
+      "state": {
+        "code": "ON",
+        "name": "Ontario",
+        "codeIso2": null,
+        "codeIso3": null
+      },
+      "city": "Fakecity",
+      "postalCode": "K2P 1L4",
+      "phone": "555-555-5555",
+      "email": null,
+      "company": "envia.com",
+      "references": null,
+      "latitude": null,
+      "longitude": null
+    },
+    "items": [
+      {
+        "id": "12637487956108",
+        "variantId": "33732617797772",
+        "productId": "4591541944460",
+        "offerId": null,
+        "inventoryId": null,
+        "sku": "TEST1",
+        "productType": null,
+        "fulfillment": {
+          "quantity": "1",
+          "service": "manual",
+          "status": null
+        },
+        "name": "Camisa manga larga - M",
+        "upc": null,
+        "requiresShipping": "true",
+        "quantity": "1",
+        "currentQuantity": null,
+        "price": "250.00",
+        "priceExtension": null,
+        "discount": "10.00",
+        "discountExtension": null,
+        "associatedItems": [],
+        "bundled": "false",
+        "tax": null,
+        "taxable": "false",
+        "weight": "0.20",
+        "vendor": "ecarttest",
+        "imageUrl": null,
+        "ecartapiUrl": "https://eshop-deve.herokuapp.com/api/v2/products/4591541944460"
+      }
+    ],
+    "packages": [],
+    "meta": null,
+    "dates": {
+      "estimatedDeliveryIn": null,
+      "deliveredAt": null,
+      "canceledAt": null,
+      "closedAt": null,
+      "createdAt": "2024-02-14T11:20:05-05:00",
+      "updatedAt": "2024-02-14T11:21:06-05:00",
+      "paidAt": "2024-02-14T11:20:05-05:00"
+    },
+    "cancelReason": null,
+    "note": null,
+    "locations": [],
+    "localizationExtensions": [],
+    "checkoutId": null,
+    "fraudRisk": null,
+    "events": []
+  }
